@@ -1,0 +1,270 @@
+/* Search Bar */
+
+.searchBar-container {
+  width: 100%;
+  margin-top: 61px;
+}
+.searchBar-Box {
+  position: relative;
+  width: 100%;
+  z-index: 0;
+  height: 400px;
+}
+
+.searchBar-Box > .bgImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.searchBar-Box > .bgImg > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.searchBar-Box > .innerBox {
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.searchBar-Box > .innerBox > h5 {
+  font-size: 23px;
+  color: #fff;
+  font-weight: 100;
+  margin-bottom: 15px;
+}
+
+.searchBar-Box > .innerBox > p {
+  font-size: 14px;
+  color: #fff;
+}
+
+.searchBar-Box > .innerBox > h5 > span {
+  background-color: #df1e2e;
+  padding: 1px 9px;
+  font-weight: bold;
+}
+
+.searchBar-Box > .innerBox > .formBox {
+  background: #e0e3e5;
+  padding: 35px 36px;
+  border-radius: 10px;
+  margin-top: 13px;
+}
+
+.searchBar-Box > .innerBox > .formBox > form {
+  display: flex;
+  align-items: center;
+}
+
+.searchBar-Box > .innerBox > .formBox > form > input,
+.inputBox > input {
+  margin: 0 5px;
+  font-size: 15px;
+  padding: 9px 7px;
+  outline: none;
+  border: none;
+  background: no-repeat;
+  border-bottom: 1px solid;
+}
+
+.searchBar-Box > .innerBox > .formBox > form > p {
+  color: #2c1e1e91;
+  font-size: 13px;
+  margin: 0 14px;
+}
+
+.searchBar-Box > .innerBox > .formBox > form > .inputBox {
+  background: #fff;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.searchBar-Box
+  > .innerBox
+  > .formBox
+  > form
+  > .inputBox
+  > input[type="submit"] {
+  background-color: #df1e2e;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 11px 19px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+.searchBar-Box
+  > .innerBox
+  > .formBox
+  > form
+  > .inputBox
+  > input[type="submit"]:hover {
+  background-color: #5a3939;
+}
+
+/* End Search Bar */
+
+/* Company Add Box */
+.addContainer {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.companyBox {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.companyBox > .companyBox-left {
+  width: 45%;
+}
+.companyBox > .companyBox-left > h3 {
+  color: #df1e2e;
+  font-size: 25px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e0e3e5;
+}
+
+.companyBox > .companyBox-left > p {
+  color: #3a3d3f;
+  font-size: 15px;
+  margin-top: 12px;
+}
+.companyBox > .companyBox-right {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(5, 70px);
+  gap: 20px 30px;
+}
+
+/* End Company Add Box */
+
+/* workExperience */
+.workExperience-container {
+  width: 100%;
+  background-color: #f7fcfe;
+  margin-top: 40px;
+  padding: 50px 0px;
+}
+
+.experienceBox {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(3, auto);
+  justify-content: center;
+  gap: 10px;
+}
+.experienceBox > .experience-head {
+  grid-area: 1/1/2/5;
+  text-align: center;
+  font-size: 27px;
+}
+
+.experienceBox > .experience-head > h3 > span {
+  color: #df1e2e;
+}
+
+.experienceBox > .grid-exBox {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.grid-exBox > img {
+  width: 100%;
+  height: 100%;
+}
+/* End workExperience */
+
+/* Up skill container */
+.upSkillContainer {
+  width: 100%;
+  background-color: #eeeeee;
+  margin-top: 40px;
+  padding: 80px 0px;
+}
+
+.upSkillBox {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, auto);
+  justify-content: center;
+  gap: 10px;
+}
+.upSkillBox > .skillHead {
+  grid-area: 1/1/2/4;
+  text-align: center;
+  font-size: 27px;
+  margin-bottom: 12px;
+}
+.upSkillBox > .skillHead > h3 > span {
+  color: #df1e2e;
+}
+.upSkillBox > .skillBox {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.upSkillBox > .skillBox > img {
+  width: 100%;
+  height: 100%;
+}
+/* End Up skill container */
+
+/* Stat Container */
+.statContainer {
+  width: 100%;
+  margin: 20px 0;
+}
+.statBox {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.statBox > .left > .imgBox {
+  width: 80%;
+  height: 100%;
+}
+.statBox > .left > .imgBox > img {
+  width: 100%;
+  height: 100%;
+}
+
+.statBox > .right > h3 {
+  font-size: 25px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e0e3e5;
+}
+.statBox > .right > h3 > span {
+  color: #df1e2e;
+}
+.statBox > .right > p {
+  color: #3a3d3f;
+  font-size: 15px;
+  margin-top: 12px;
+}
+
+/* End Stat Container */
