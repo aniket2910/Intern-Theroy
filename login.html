@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+<link rel="stylesheet" href="Styles/login.css">
+<link rel="stylesheet" href="Styles/common.css">
+</head>
+<body>
+    <!-- header -->
+    <div class="header-container">
+        <div class="header-data">
+            <div class="header-left">
+                <div class="icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="logo">
+                    <img src="	https://assets.interntheory.com/creative/logo.png" alt="Intern Theroy">
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="button-container"><a href="#">Sign In</a></div>
+            </div>
+        </div>
+    </div>
+    <!-- login-page -->
+    <div id="container">
+        <div id="inputbox">
+        <button id="students">STUDENTS </button>
+        <button id="company">COMPANY</button>
+    </div>
+    <h5>Login</h5>
+   <div id="lbox">
+    If you are a company looking to hire interns, please login as a company by clicking
+    <span class="here">here.</span>
+   </div>
+   <form action="" id="form">
+   <div id="signinbtn">
+       <button class="facebook" >
+           <img src="./images/facebook.svg" 
+           alt="facebook" class="fb">
+               <a href="https://www.facebook.com/" target="_blank" class="btnsign">SIGNIN WITH FACEBOOK</a>
+           </button>
+       <button class="google">
+           <img src="./images/google.svg" class="gle" alt="google">
+           <a href="https://www.google.com/" target="_blank" class="btnsign">SIGNIN WITH GOOGLE</a>
+        </button>
+        <button class="linkdin">
+            <img src="./images/linkdin.svg" class="linkdin" alt="linkdin">
+            <a href="https://www.linkdin.com/" target="_blank" class="btnsign">SIGNIN WITH GOOGLE</a>
+         </button>
+
+
+<p class="or">OR</p>
+<input type="email/number" placeholder="Email/Number" class="email">
+<input type="password" placeholder="Password" class="password">
+
+        <div class="wrapper">
+            <input id="remember" name="rememberMe" type="checkbox" value="Remember Me">
+            <label for="remember">Remember Me</label>
+            <span id="forgot-pass">Forgot Password?</span>
+          </div>
+
+<p class="create">Don't have an account? <span>Create your account</span></p>
+<input type="submit" placeholder="Log In" id="login" value="Log In" onclick="window.location.href='index.html'">
+
+
+
+
+</div>
+</form>
+       
+    </div>
+</body>
+</html>
+<script src="Script/login.js"></script>

@@ -1,0 +1,117 @@
+body {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+
+}
+.login-page {
+display: grid;
+width: 45%;
+height: auto;
+/* background-color: rgb(255, 143, 143); */
+justify-content: center;
+margin: auto;
+margin-right: 5px;
+}
+.login-page>h5 {
+    font-size: 25px;
+
+}
+.login-page >p {
+    margin-top: -30px;
+    font-size: 15px;
+}
+span {
+    color: blue;
+}
+.register-form {
+    margin-top: 10px;
+    width: 100%;
+    /* border: 2px solid red; */
+}
+.register-form >input {
+    width: 100%;
+    margin-bottom: 15px;
+    height: 40px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border: none;
+    border-bottom: 2px solid blue;
+   
+}
+
+.name >input {
+    height: 40px;
+    /* border-radius: 8px; */
+    margin-bottom: 15px;
+    padding-right:15px ;
+    border: none;
+    border-bottom: 2px solid blue;
+    margin-right: 25px;
+}
+#btn {
+    border: 1px solid blue;
+    color: red;
+    background-color: white;
+    border: 2px solid red;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+#lbox {
+    margin-top: 15px;
+    height: 62px;
+    border-style: dashed;
+    border-color: red;
+    border-width: 1px;
+    border-radius: 6px;
+    background-color: #f7eaec;
+    font-size: 17px;
+    line-height: 1.4rem;
+    padding-left: 7px;
+    /* text-align: center; */
+    text-justify: newspaper;
+    }
+    #lbox > span {
+        color: blue;
+        cursor: pointer;
+    }
+    #signinbtn {
+        display: grid;
+        padding-top: 12px;
+    
+    }
+
+    .fb{
+        width: 30px;
+        height: 30px;
+        background-color: white;
+        /* margin-left: -165px; */
+        border-radius: 8px;
+        margin: auto;
+        margin-left: -174px;
+        margin-top: 5px;
+        padding: 3px;
+      }
+      .facebook {
+        height: 45px;
+        background-color:#18e;
+        font-weight: 600;
+        border-radius: 5px;
+        border: none;
+        color: white;
+        font-size: 15px;
+        width: 100%;
+        /* margin-top: 8px; */
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+       
+        cursor: pointer;
+        /* margin: auto; */
+      }
+      #btnsign {
+        text-decoration: none;
+        padding-left: 90px;
+       margin: auto;
+       margin-bottom: 90px;
+       color: white;
+      }
