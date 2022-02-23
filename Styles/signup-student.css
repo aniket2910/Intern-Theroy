@@ -3,27 +3,8 @@ body {
     background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
 
 }
-.login-page {
-display: grid;
-width: 45%;
-height: auto;
-background-color: rgb(255, 255, 255);
-padding: 20px;
-justify-content: center;
-margin: auto;
-margin-top: 85px;
-margin-bottom: 20px;
-border-radius: 5px;
-box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-margin-right: 5px;
-}
-.login-page>h5 {
-    font-size: 25px;
-
-}
-.login-page >p {
-    margin-top: 10px;
-    font-size: 15px;
+#container {
+    margin-bottom: 20px;
 }
 span {
     color: blue;
@@ -40,17 +21,24 @@ span {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border: none;
-    border-bottom: 2px solid blue;
+    border-bottom: 2px solid rgb(255, 0, 76);
    
 }
+.name {
+    display: flex;
 
+}
+
+.ep {
+    display: grid;
+}
 .name >input {
     height: 40px;
     /* border-radius: 8px; */
     margin-bottom: 15px;
     padding-right:15px ;
     border: none;
-    border-bottom: 2px solid blue;
+    border-bottom: 2px solid rgb(255, 0, 98);
     margin-right: 25px;
 }
 #btn {
@@ -58,8 +46,11 @@ span {
     color: red;
     background-color: white;
     border: 1px solid red;
-    border-radius: 8px;
+    border-radius: 2px;
     cursor: pointer;
+    margin-top: 10px;
+    width: 98%;
+    height: 35px;
 }
 
 
@@ -83,9 +74,8 @@ span {
     }
     #signinbtn {
         display: grid;
-        /* padding-top: 12px; */
-    margin-top: 20px;
-   
+        padding-top: 12px;
+    
     }
 
     .fb{
@@ -94,12 +84,10 @@ span {
         background-color: white;
         /* margin-left: -165px; */
         border-radius: 8px;
-         /* margin: auto;
-       
-        margin-top: 5px; */
-        margin-left: -144px;
-
-        padding: 5px; 
+        margin: auto;
+        margin-left: -174px;
+        margin-top: 5px;
+        padding: 3px;
       }
       .facebook {
         height: 45px;
@@ -110,6 +98,7 @@ span {
         color: white;
         font-size: 15px;
         width: 100%;
+        /* margin-top: 8px; */
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
        
         cursor: pointer;
@@ -117,9 +106,8 @@ span {
       }
       #btnsign {
         text-decoration: none;
-        padding-top: -50px;
         padding-left: 90px;
-        font-size: 16px;
- 
+       margin: auto;
+       margin-bottom: 90px;
        color: white;
       }
