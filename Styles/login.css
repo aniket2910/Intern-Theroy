@@ -19,7 +19,7 @@ body {
  background-color: white;
  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
  border-radius: 6px;
-
+margin-bottom: 20px;
  padding: 30px;
 }
 #students ,#company{
@@ -71,8 +71,9 @@ text-justify: newspaper;
     display: grid;
     padding-top: 12px;
 
+
 }
-.facebook,.google {
+.facebook,.google, .linkdin {
     height: 45px;
     background-color: #4165af;
     font-weight: 600;
@@ -86,6 +87,20 @@ text-justify: newspaper;
     display: flex;
     cursor: pointer;
 }
+
+.linkdin {
+    display: none;
+
+}
+#lnkdn {
+    color: brown;
+}
+
+
+
+
+
+
 .btnsign{
 margin: auto;
 margin-left: 5px;
@@ -104,7 +119,7 @@ color: white;
     margin-top: 8px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-.fb,  .gle{
+.gle{
     width: 30px;
     height: 30px;
     background-color: white;
@@ -114,6 +129,17 @@ color: white;
     margin-left: 14px;
     padding: 3px;
   }
+#lnkdn {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    /* margin-left: -165px; */
+    border-radius: 8px;
+    margin: auto;
+    margin-left: 14px;
+    padding: 3px;
+}
+
 
 .or{
     text-align: center;
@@ -170,4 +196,20 @@ color: white;
     cursor: pointer;
     font-size: 20px;
     color: red;
+}
+
+@media all and (min-width:50px) and (max-width:760px){
+    #container {height: auto;
+    width: 95%;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+ border-radius: 6px;
+    }
+}
+
+@media all and (min-width:761px) and (max-width:1080px){
+    #container {height: auto;
+    width: 60%;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+ border-radius: 6px;
+    }
 }

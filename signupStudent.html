@@ -4,17 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log In Page</title>
+    <title>Signup Students</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" 
     crossorigin="anonymous" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="Styles/login.css">
+<link rel="stylesheet" href="Styles/signup-student.css">
 <link rel="stylesheet" href="Styles/common.css">
-<link rel="stylesheet" href="Styles/homepage.css">
-
 </head>
 <body>
     <!-- header -->
@@ -36,81 +32,18 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
             </div>
         </div>
     </div>
-
-    <!-- sidebar -->
-
-    <div class="sidebar-container">
-        <div class="sidebar-box">
-            <div class="sidebar-top">
-                <div class="icon second-icon">
-                    <i class="fas fa-bars"></i>
-                </div>
-                <div class="logo">
-                    <img src="	https://assets.interntheory.com/creative/logo.png" alt="Intern Theroy">
-                </div>
-            </div>
-            <div class="sidebar-grid">
-                <div class="box">
-                    <div class="icon">
-                        <i class="fas fa-home-alt"></i>
-                    </div>
-                    <p>Home</p>
-                </div>
-                <div class="box">
-                    <div class="icon">
-                        <i class="fa-solid fa-list"></i>
-                    </div>
-                    <p>Internships</p>
-                </div>
-                <div class="box">
-                    <div class="icon">
-                        <i class="fa-solid fa-briefcase"></i>
-                    </div>
-                    <p>Jobs</p>
-                </div>
-                <div class="box">
-                    <div class="icon">
-                        <i class="fa-solid fa-rectangle-list"></i>
-                    </div>
-                    <p>Post Internships</p>
-                </div>
-                <div class="box">
-                    <div class="icon">
-                        <i class="fa-solid fa-folder"></i>
-                    </div>
-                    <p>Courses</p>
-                </div>
-                <div class="box contact-us">
-                    <div class="icon">
-                        <i class="fa-solid fa-phone"></i>
-                    </div>
-                    <p>Contact Us</p>
-                </div>
-                <div class="box">
-                    <div class="icon">
-                        <i class="fa-solid fa-bars-staggered"></i>
-                    </div>
-                    <p>Register</p>
-                </div>
-                <div class="box">
-                    <div class="icon">
-                        <i class="fa-solid fa-right-to-bracket"></i>
-                    </div>
-                    <p>Login</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- login-page -->
     <div id="container">
-        <div id="inputbox">
-        <button id="students">STUDENTS </button>
-        <button id="company">COMPANY</button>
-    </div>
-    <h5>Login</h5>
+        <!-- <div id="inputbox">
+  
+
+    </div> -->
+            
+    <h2>Register Candidate</h2>
+    <p class="create" style="margin-left:-99px">Don't have an account? <span>Create your account</span></p>
+  
    <div id="lbox">
-    If you are a company looking to hire interns, please login as a company by clicking
+    If you are a company looking to hire interns, please register as a company by clicking
     <span class="here">here.</span>
    </div>
    <form action="" id="form">
@@ -119,31 +52,33 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
        <button class="facebook" >
            <img src="./images/facebook.svg" 
            alt="facebook" class="gle">
-               <a href="https://www.facebook.com/" target="_blank" class="btnsign">SIGNIN WITH FACEBOOK</a>
+               <a href="https://www.facebook.com/" target="_blank" class="btnsign">REGISTER WITH FACEBOOK</a>
            </button>
        <button class="google">
            <img src="./images/google.svg" class="gle" alt="google">
-           <a href="https://www.google.com/" target="_blank" class="btnsign">SIGNIN WITH GOOGLE</a>
+           <a href="https://www.google.com/" target="_blank" class="btnsign">REGISTER WITH GOOGLE</a>
         </button>
-        <button class="linkdin">
-            <img src="./images/linkedin.svg" id="lnkdn" alt="linkdin">
-            <a href="https://www.linkedin.com/" target="_blank" class="btnsign">SIGNIN WITH LINKEDIN</a>
-         </button>
         </div>
 
 <p class="or">OR</p>
-<input type="email/number" placeholder="Email/Number" class="email">
-<input type="password" placeholder="Password" class="password">
 
-        <div class="wrapper">
-            <input id="remember" name="rememberMe" type="checkbox" value="Remember Me">
-            <label for="remember">Remember Me</label>
-            <span id="forgot-pass">Forgot Password?</span>
-          </div>
 
-<p class="create">Don't have an account? <span>Create your account</span></p>
-<input type="submit" placeholder="Log In" id="login" value="Log In" onclick="window.location.href='index.html'">
+<div id="form">
+    <form action="" class="register-form">
+        <div class="name">
+       
+        
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Last Name">
+</div>
+<div class="ep">
+        <input type="email/number" placeholder="Email/Number" class="email">
+        <input type="password" placeholder="Password" class="password">
+    </div>
+        <input type="submit" value="NEXT" id="btn"  onclick="window.location.href='index.html'">
 
+    </form>
+</div>
 
 
 
@@ -248,6 +183,4 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
     </div>
 </body>
 </html>
-<script src="Script/login.js"></script>
-<script src="Script/common.js"></script>
-<script src="Script/homepage.js"></script>
+<!-- <script src="Script/signupStudent.js"></script> -->
