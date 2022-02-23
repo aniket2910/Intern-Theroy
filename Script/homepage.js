@@ -36,6 +36,56 @@ function showItem() {
   }
 }
 showItem();
+
 // setInterval(() => {
 //   next();
 // }, 1000);
+=======
+setInterval(() => {
+  next();
+}, 2000);
+
+// Search-bar js
+var data = JSON.parse(localStorage.getItem("data")) || [];
+// Click events
+var showCity = true;
+var showType = true;
+var showPref = true;
+document.querySelector("#cities").addEventListener("click", showCities);
+document.querySelector("#type").addEventListener("click", showTypes);
+document.querySelector("#preference").addEventListener("click", showPreference);
+
+function showCities() {
+  var cities = data.cities;
+  if (showCity) {
+    cities.map(function (data) {
+      var option = document.createElement("option");
+      option.setAttribute("value", data.text);
+      document.querySelector("#city").append(option);
+    });
+    showCity = false;
+  }
+}
+
+function showTypes() {
+  var types = data.types;
+  if (showTypes) {
+    types.map(function (data) {
+      var types = document.createElement("option");
+      types.setAttribute("value", data.text);
+      document.querySelector("#types").append(types);
+    });
+    showTypes = false;
+  }
+}
+function showPreference() {
+  var preference = data.preferences;
+  if (showPref) {
+    preference.map(function (data) {
+      var preferences = document.createElement("option");
+      preferences.setAttribute("value", data.text);
+      document.querySelector("#pref").append(preferences);
+    });
+    showPref = false;
+  }
+}
