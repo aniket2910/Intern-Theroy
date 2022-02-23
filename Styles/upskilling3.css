@@ -420,6 +420,7 @@ img {
 #part2 > #last4 > hr {
   width: 90%;
   margin: auto;
+  border:1px solid grey;
 }
 #part2 > #last4 > .Similardiv {
   display: flex;
@@ -438,34 +439,34 @@ img {
   /* border:1px solid red; */
   height: 50px;
   width: 70px;
-  margin-left: 40px;
+  margin-left: 15px;
 }
 #part2 > #last4 > .Similardiv > .know3 {
   /* border:1px solid red; */
   height: 50px;
-  width: 70px;
+  width: 100px;
 }
 #part2 > #last4 > .Similardiv > .know1 > p {
-  color: #087cdd;
-  font-size: 18px;
+  color: #0775cf;
+  font-size: 19px;
   font-family: Roboto, Arial, Helvetica, sans-serif;
   margin-top: 14px;
   margin-left: 20px;
 }
 #part2 > #last4 > .Similardiv > .know2 > p {
-  color: #313335b2;
-  font-size: 15px;
+  color: #313335da;
+  font-size: 17px;
   font-family: Roboto, Arial, Helvetica, sans-serif;
-  margin-left: 25px;
+  margin-left: 15px;
   margin-top: 13px;
   margin-bottom: 10px;
   text-decoration: line-through;
 }
 #part2 > #last4 > .Similardiv > .know3 > p {
-  color: #313335b2;
-  font-size: 20px;
+  color: #313335e0;
+  font-size: 28px;
   font-family: Roboto, Arial, Helvetica, sans-serif;
-  margin-left: 25px;
+  margin-left: 15px;
   margin-top: 11px;
   margin-bottom: 10px;
 }
@@ -519,26 +520,26 @@ img {
   display: flex;
 }
 #part2 > #last2 > #price > div:first-child {
-  width: 150px;
-  height: 60px;
+  width: 200px;
+  height: 50px;
   /* border:1px solid red; */
 }
 #part2 > #last2 > #price > div:last-child {
   width: 100px;
-  height: 60px;
+  height: 50px;
   /* border:1px solid red; */
 }
 #part2 > #last2 > #price > div:first-child > h1 {
   color: red;
   font-size: 50px;
-  margin-left: 35px;
-  letter-spacing: 2px;
+  margin-left: 20px;
+ letter-spacing: 2px;
 }
 #part2 > #last2 > #price > div:last-child > p {
   color: #3c4858;
   font-size: 20px;
-  margin-left: 25px;
-  margin-top: 22px;
+  margin-left: 10px;
+  margin-top: 24px;
   text-decoration: line-through;
 }
 #part2 > #last2 > #cart {
