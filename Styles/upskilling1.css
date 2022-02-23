@@ -643,6 +643,9 @@ img{
     border:1px solid rgba(255, 0, 0, 0.692);
 
 }
+#part2>#last2>#enroll:hover{
+    background-color: rgba(216, 180, 180, 0.404);
+  }
 #part2>#last2>#enroll>p{
     color:red;
     text-align: center;
