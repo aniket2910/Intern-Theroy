@@ -1,6 +1,15 @@
 body {
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+    background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
+     --stripe: #cfd8dc;
+    --bg: #e1e1e1;
+  
+    background: linear-gradient(135deg, var(--bg) 25%, transparent 25%) -70px 0,
+      linear-gradient(225deg, var(--bg) 25%, transparent 25%) -50px 0,
+      linear-gradient(315deg, var(--bg) 25%, transparent 25%),
+      linear-gradient(45deg, var(--bg) 25%, transparent 25%);
+    background-size: 100px 100px;
+    background-color: var(--stripe);
 
 }
 #container {
@@ -14,23 +23,31 @@ span {
     width: 100%;
     /* border: 2px solid red; */
 }
-.register-form >input {
+/* .register-form >input {
     width: 100%;
     margin-bottom: 15px;
     height: 40px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border: none;
-    border-bottom: 2px solid rgb(255, 0, 76);
+    border-bottom: 1px solid rgb(118, 104, 108);
    
-}
+} */
 .name {
     display: flex;
 
 }
+#form {
+margin-top: 20px;
 
+}
 .ep {
     display: grid;
+    
+}
+.ep >input {
+    outline: 0px;
+    border-bottom: 1px solid rgba(79, 74, 74, 0.6);
 }
 .name >input {
     height: 40px;
@@ -38,18 +55,20 @@ span {
     margin-bottom: 15px;
     padding-right:15px ;
     border: none;
-    border-bottom: 2px solid rgb(255, 0, 98);
+    border-bottom: 1px solid rgba(96, 89, 92, 0.752);
     margin-right: 25px;
+    outline: 0px;
+    width: 90%;
 }
 #btn {
     border: 1px solid blue;
     color: red;
     background-color: white;
-    border: 1px solid red;
-    border-radius: 2px;
+    border: 1px solid rgba(240, 14, 82, 0.897);
+    border-radius: 4px;
     cursor: pointer;
     margin-top: 10px;
-    width: 98%;
+    width: 90%;
     height: 35px;
 }
 
@@ -89,7 +108,7 @@ span {
         margin-top: 5px;
         padding: 3px;
       }
-      .facebook {
+      .facebook, .google {
         height: 45px;
         background-color:#18e;
         font-weight: 600;
@@ -97,7 +116,7 @@ span {
         border: none;
         color: white;
         font-size: 15px;
-        width: 100%;
+        width: 98%;
         /* margin-top: 8px; */
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
        
@@ -110,4 +129,5 @@ span {
        margin: auto;
        margin-bottom: 90px;
        color: white;
+       
       }
