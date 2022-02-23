@@ -1,11 +1,13 @@
 body {
+  
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 
 #container {
     height: auto;
+    
     width: 40%;
-  margin-left: 40px;
+  margin-left: 30px;
     /* border: 1px solid red; */
     margin-top: 62px;
 margin-bottom: 20px;
@@ -29,6 +31,12 @@ margin-bottom: 20px;
 
 
 }
+
+
+
+
+
+
 .btnsign{
 margin: auto;
 margin-left: 5px;
@@ -51,7 +59,6 @@ color: white;
     border-bottom: 1px solid rgba(171, 160, 160, 0.842);
     margin-top: 3px;
     margin-bottom: 25px;
-    outline: none;
 }
 
 
@@ -75,30 +82,12 @@ color: white;
       
   }
 .call {
-    display: flex;
-    width:160px;
-    margin:auto;
     margin-top: 50px;
-    justify-content: space-between;
     text-align: center;
     font-size: 28px;
-    /* color: #df1e68; */
+    color: #df1e68;
 }
-.icon5 {
-    color: #3b5998;
-}
-.icon1 {
-    color:#0084ff;
-}
-.icon2{
-    color: #ee2c87;
-}
-.icon3 {
-    color: #0073b5;
-}
-.icon4 {
-    color: #25d366;
-}
+
 
 #map{
     margin-left: 550px;
