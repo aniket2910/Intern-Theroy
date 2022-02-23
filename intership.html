@@ -5,81 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        #imgDiv{
-            width:20%;
-            margin-right: 0px;
-        }
-        #outer{
-            display: flex;
-            justify-content: center;
-            background-color: whitesmoke;
-        }
-        #imgDiv>img{
-            width: 100%;
-        }
-        #container{
-            width:60%;
-            background-color: white;
-        }
-        #container>div{
-            width: 90%;
-            height: 210px;
-            margin-bottom: 20px;
-            border-bottom: dashed;
-            margin-left: 40px;
-            color: rgba(165, 158, 158, 0.308);
-            display: flex;
-            align-items: center;
-         }
-        .innerDiv2>h6{
-            color: rgba(59, 56, 56, 0.87);
-            font-size: 1.4rem;
-            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-            font-weight: 300;
-            line-height:0rem;
-            margin: 0px;
-            margin-bottom: 25px;
-        }
-        .innerDiv2> .para{
-            color: rgba(59, 56, 56, 0.87);
-            font-size: 0.9rem;
-            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-            font-weight: 300;
-            line-height:8px;
-        }
-        .innerDiv2> .para5{
-            color: rgba(73, 71, 71, 0.87);
-            font-size: 0.9rem;
-            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-            font-weight: bold;
-            line-height:8px;
-        }
-        h5{
-            color: rgba(0, 0, 0, 0.87);
-            font-size: 1.5rem;
-            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-            font-weight: 400;
-            line-height: 1.33;
-            letter-spacing: 0em;
-            margin-left: 30px;
-            line-height: 0px;
-        }
-        .mainDiv{
-            display: flex;
-        }
-        .innerDiv{
-            width: 15%;
-            margin-left: 30px;
-            margin-bottom: 70px;
-        }
-        .innerDiv>img{
-            width: 100%
-        }
-        .innerDiv2{
-            margin-left: 40px;
-        }
-    </style>
+    <link rel="stylesheet" href="/internship.css">
 </head>
 <body>
     <div id="outer">
@@ -133,9 +59,26 @@
         p5.innerText = ele.p5;
         p5.setAttribute("class", "para5");
 
+        var div3 = document.createElement("div");
+        div3.setAttribute("class", "innerDiv3");
+
+        var p6 = document.createElement("p");
+        p6.innerText = ele.p6;
+
+        var symDiv = document.createElement("div");
+        symDiv.setAttribute("class", "symDiv");
+
+        var sym = document.createElement("img");
+        sym.setAttribute("src", ele.sym);
+
+        var anch = document.createElement("a");
+        anch.innerText = ele.anch;
+
         div1.append(img);
         div2.append(heading, p1, p2, p3, p4, p5);
-        mainDiv.append(div1, div2);
+        symDiv.append(sym);
+        div3.append(p6, symDiv, anch);
+        mainDiv.append(div1, div2, div3);
 
         document.querySelector("#container").append(mainDiv);
 

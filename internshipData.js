@@ -7,6 +7,9 @@ var internshipData = [
       p3: "Certified Courses",
       p4: "Guaranteed Internship Opportunities",
       p5: "Learn Industry-Demanded Skills", 
+      p6: "4-6 Weeks",
+      sym: "https://cdn-icons.flaticon.com/png/512/3138/premium/3138295.png?token=exp=1645609244~hmac=5188fafefc094a9f869686d1acf2b6a0",
+      anch: "UPGRADE SKILLS",
     },
     {
         image_url: "https://assets.interntheory.com/uploads/company/logos/3cdd6cced1a455d7623c5319436acdcf3408009b.jpg",
@@ -16,6 +19,9 @@ var internshipData = [
         p3: "Real Estate",
         p4: "Mumbai",
         p5: "Stipend: 10000 - 12000 per month",
+        p6: "3 Weeks left",
+        sym: "https://cdn-icons.flaticon.com/png/512/3138/premium/3138295.png?token=exp=1645609244~hmac=5188fafefc094a9f869686d1acf2b6a0",
+        anch: "VIEW AND APPLY",
     },
     {
         image_url: "https://assets.interntheory.com/uploads/company/logos/bdc2fb3214ab03616ab475fe2f360cb8b837aa87.jpg",
@@ -25,6 +31,9 @@ var internshipData = [
         p3: "Marketing",
         p4: "Ahmedabad",
         p5: "Stipend: 18000 per month",
+        p6: "3 Weeks left",
+        sym: "https://cdn-icons.flaticon.com/png/512/3138/premium/3138295.png?token=exp=1645609244~hmac=5188fafefc094a9f869686d1acf2b6a0",
+        anch: "VIEW AND APPLY",
     },
     {
         image_url: "https://assets.interntheory.com/uploads/company/companylogos/62362fbf882221470f099d8d0a119df93ce19831/7e34b7356b30b3696d14fcab94c6e8989a42fd69com.jpg",
@@ -34,6 +43,9 @@ var internshipData = [
         p3: "Marketing",
         p4: "Bangalore,Chennai,Delhi ",
         p5: "Stipend: 3000 - 10000 per month",
+        p6: "3 Weeks left",
+        sym: "https://cdn-icons.flaticon.com/png/512/3138/premium/3138295.png?token=exp=1645609244~hmac=5188fafefc094a9f869686d1acf2b6a0",
+        anch: "VIEW AND APPLY",
     },
     {
         image_url: "https://assets.interntheory.com/uploads/company/companylogos/5b17adc969018b102b802193f65ffebc07494a2c/7c483889017d4bef536927bf5820941e35f05657com.jpeg",
@@ -43,6 +55,9 @@ var internshipData = [
         p3: "SEO",
         p4: "Delhi",
         p5: "Stipend: 5000 - 10000 per month",
+        p6: "2 Weeks left",
+        sym: "https://cdn-icons.flaticon.com/png/512/3138/premium/3138295.png?token=exp=1645609244~hmac=5188fafefc094a9f869686d1acf2b6a0",
+        anch: "VIEW AND APPLY",
     },
     {
         image_url: "https://assets.interntheory.com/uploads/company/companylogos/e659b3b149dd5355940bc7ff40dbee2f0f53b22a/2cdd8e5a8b7f7a140f8711f385755340c64b76d5com.jpg",
@@ -52,6 +67,9 @@ var internshipData = [
         p3: "Human Resources",
         p4: "Thane",
         p5: "Stipend: 3000 - 5000 per month",
+        p6: "2 Weeks left",
+        sym: "https://cdn-icons.flaticon.com/png/512/3138/premium/3138295.png?token=exp=1645609244~hmac=5188fafefc094a9f869686d1acf2b6a0",
+        anch: "VIEW AND APPLY",
     },
     {
         image_url: "https://assets.interntheory.com/uploads/company/logos/cb107f6e62308e242a975eb4664f180929f67dad.jpg",
@@ -61,6 +79,9 @@ var internshipData = [
         p3: "General Management",
         p4: "Hyderabad,Bangalore,Mumbai ",
         p5: "Stipend: 7000 - 10000 per month",
+        p6: "2 Weeks left",
+        sym: "https://cdn-icons.flaticon.com/png/512/3138/premium/3138295.png?token=exp=1645609244~hmac=5188fafefc094a9f869686d1acf2b6a0",
+        anch: "VIEW AND APPLY",
     },
     {
         image_url: "https://assets.interntheory.com/uploads/company/companylogos/768136d410e350e1646ec0f32e49544d7fb4ce73/d937822d046b705e8aa58936809171cd709d2cb3com.jpg",
@@ -70,6 +91,9 @@ var internshipData = [
         p3: "Human Resources",
         p4: "Delhi",
         p5: "Stipend: 6000 per month",
+        p6: "1 Week",
+        sym: "https://cdn-icons.flaticon.com/png/512/3138/premium/3138295.png?token=exp=1645609244~hmac=5188fafefc094a9f869686d1acf2b6a0",
+        anch: "VIEW AND APPLY",
     },
     {
         image_url: "https://assets.interntheory.com/uploads/company/logos/40d8069a92d3926dbf328356fe32d4d9f12f870e.jpg",
@@ -79,6 +103,9 @@ var internshipData = [
         p3: "Content Writing",
         p4: "Noida",
         p5: "Stipend: 5000 per month",
+        p6: "4 days left",
+        sym: "https://cdn-icons.flaticon.com/png/512/3138/premium/3138295.png?token=exp=1645609244~hmac=5188fafefc094a9f869686d1acf2b6a0",
+        anch: "VIEW AND APPLY",
     },
     {
         image_url: "https://assets.interntheory.com/uploads/company/logos/76a0ec84f95f4b7a450d53b5953bdf17802f62ce.jpg",
@@ -88,6 +115,9 @@ var internshipData = [
         p3: "Business Development",
         p4: "Hyderabad,Delhi",
         p5: "Stipend: 4000 per month",
+        p6: "4 days left",
+        sym: "https://cdn-icons.flaticon.com/png/512/3138/premium/3138295.png?token=exp=1645609244~hmac=5188fafefc094a9f869686d1acf2b6a0",
+        anch: "VIEW AND APPLY",
     },
     {
         image_url: "https://assets.interntheory.com/uploads/company/logos/76a0ec84f95f4b7a450d53b5953bdf17802f62ce.jpg",
@@ -97,6 +127,9 @@ var internshipData = [
         p3: "Content Writing",
         p4: "Hyderabad,Delhi",
         p5: "Stipend: 4000 per month",
+        p6: "4 days left",
+        sym: "https://cdn-icons.flaticon.com/png/512/3138/premium/3138295.png?token=exp=1645609244~hmac=5188fafefc094a9f869686d1acf2b6a0",
+        anch: "VIEW AND APPLY",
     },
   ];
 
