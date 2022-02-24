@@ -1,5 +1,5 @@
 body {
-    background-color: bisque;
+    background-image: conic-gradient(rgb(246, 46, 156), yellow, green);
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 .header-container {
@@ -153,6 +153,7 @@ color: white;
     border: none;
     border-bottom: 2px solid red;
     margin-top: 3px;
+    outline: none;
 }
 
 .wrapper {

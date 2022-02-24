@@ -53,5 +53,6 @@ function myFormSubmit() {
     .querySelector("input[type='submit']")
     .addEventListener("click", function () {
       window.location.href = "index.html";
+      alert("Login Successful")
     });
 }
