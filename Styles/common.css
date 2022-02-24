@@ -14,6 +14,7 @@
   position: fixed;
   top: 0;
   z-index: 100000;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .header-data {
@@ -84,7 +85,12 @@
   background-color: #5a3939;
 }
 /* End Header Style */
+<<<<<<< HEAD
 /* footer */
+=======
+
+/* Footer Style */
+>>>>>>> main
 .footer-container {
   width: 100%;
   background-color: #446478;
@@ -129,7 +135,11 @@
 
 .footer-navigation > .box > ul > li {
   list-style: none;
+<<<<<<< HEAD
   font-size: 16px;
+=======
+  font-size: 14px;
+>>>>>>> main
 }
 
 .footer-navigation > .box > ul > li.heading {
@@ -164,11 +174,175 @@
 .footer-bottom > .top > ul > li > a {
   color: #fff;
   text-decoration: none;
+<<<<<<< HEAD
   font-size: 16px;
+=======
+  font-size: 14px;
+>>>>>>> main
 }
 .footer-bottom > .bottom > p {
   margin-top: 12px;
   text-align: center;
+<<<<<<< HEAD
   font-size: 15px;
   color: #fff;
 }
+=======
+  font-size: 13px;
+  color: #fff;
+}
+/* End Footer Style */
+
+/* Sidebar */
+.sidebar-container {
+  position: fixed;
+  z-index: 10000000;
+  top: 0;
+  bottom: 0;
+  left: -214px;
+  width: 0%;
+  background: #fff;
+  transition: all 0.2s ease;
+}
+
+.active {
+  display: flex;
+  left: 0px;
+  width: 23%;
+  transition: all 0.2s ease;
+}
+.sidebar-box {
+  width: 100%;
+}
+.sidebar-box > .sidebar-top {
+  display: flex;
+  align-items: center;
+  padding: 14px 18px;
+}
+.sidebar-box > .sidebar-top > .icon {
+  margin-right: 20px;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: background-color 0.5s ease;
+}
+.sidebar-box > .sidebar-top > .logo {
+  width: 84px;
+  height: 43px;
+}
+
+.sidebar-box > .sidebar-top > .icon:hover {
+  background-color: #9595b947;
+  border-radius: 50%;
+}
+.sidebar-box > .sidebar-top > .logo > img {
+  width: 100%;
+}
+.sidebar-box > .sidebar-grid {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+}
+.sidebar-box > .sidebar-grid > .box {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 3px 18px;
+  color: #446478;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.sidebar-box > .sidebar-grid > .contact-us {
+  border-bottom: 1px solid #00000033;
+  padding-bottom: 12px;
+}
+
+.sidebar-box > .sidebar-grid > .box:hover {
+  background-color: #9595b947;
+}
+.sidebar-box > .sidebar-grid > .box > .icon {
+  margin-right: 20px;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar-box > .sidebar-grid > .courseContainer1,
+.sidebar-box > .sidebar-grid > .courseContainer2 {
+  height: 0px;
+  padding: 0px;
+  overflow: hidden;
+  transition: all 0.2s ease-in;
+}
+.sidebar-box > .sidebar-grid > .activeCourse {
+  display: flex;
+  height: 50px;
+  overflow: visible;
+  transition: all 0.2s ease-in;
+}
+.sidebar-box > .sidebar-grid > .registerContainer1,
+.sidebar-box > .sidebar-grid > .registerContainer2 {
+  height: 0px;
+  padding: 0px;
+  overflow: hidden;
+  transition: all 0.2s ease-in;
+}
+.sidebar-box > .sidebar-grid > .activeRegister {
+  display: flex;
+  height: 50px;
+  overflow: visible;
+  transition: all 0.2s ease-in;
+}
+.sidebar-box > .sidebar-grid > .loginContainer1,
+.sidebar-box > .sidebar-grid > .loginContainer2 {
+  height: 0px;
+  padding: 0px;
+  overflow: hidden;
+  transition: all 0.2s ease-in;
+}
+.sidebar-box > .sidebar-grid > .activeLogin {
+  display: flex;
+  height: 50px;
+  overflow: visible;
+  transition: all 0.2s ease-in;
+}
+.sidebar-box > .sidebar-grid > #course > .open,
+.sidebar-box > .sidebar-grid > #course > .close {
+  display: none;
+}
+.sidebar-box > .sidebar-grid > #course > .activeBtn,
+.sidebar-box > .sidebar-grid > #course > .activeBtn {
+  display: flex;
+  align-self: center;
+  margin-left: auto;
+}
+.sidebar-box > .sidebar-grid > #register > .open,
+.sidebar-box > .sidebar-grid > #register > .close {
+  display: none;
+}
+.sidebar-box > .sidebar-grid > #register > .activeBtn,
+.sidebar-box > .sidebar-grid > #register > .activeBtn {
+  display: flex;
+  align-self: center;
+  margin-left: auto;
+}
+.sidebar-box > .sidebar-grid > #login > .open,
+.sidebar-box > .sidebar-grid > #login > .close {
+  display: none;
+}
+.sidebar-box > .sidebar-grid > #login > .activeBtn,
+.sidebar-box > .sidebar-grid > #login > .activeBtn {
+  display: flex;
+  align-self: center;
+  margin-left: auto;
+}
+/* End Sidebar Style */
+>>>>>>> main
