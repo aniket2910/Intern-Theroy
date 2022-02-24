@@ -58,4 +58,3 @@ function openLoginBox() {
   container1.classList.toggle("activeLogin");
   container2.classList.toggle("activeLogin");
 }
-
