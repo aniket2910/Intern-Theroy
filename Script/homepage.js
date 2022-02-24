@@ -36,6 +36,11 @@ function showItem() {
   }
 }
 showItem();
+
+// setInterval(() => {
+//   next();
+// }, 1000);
+=======
 setInterval(() => {
   next();
 }, 2000);
