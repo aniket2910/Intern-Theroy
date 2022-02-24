@@ -258,4 +258,73 @@
   justify-content: center;
   align-items: center;
 }
+.sidebar-box > .sidebar-grid > .courseContainer1,
+.sidebar-box > .sidebar-grid > .courseContainer2 {
+  height: 0px;
+  padding: 0px;
+  overflow: hidden;
+  transition: all 0.2s ease-in;
+}
+.sidebar-box > .sidebar-grid > .activeCourse {
+  display: flex;
+  height: 50px;
+  overflow: visible;
+  transition: all 0.2s ease-in;
+}
+.sidebar-box > .sidebar-grid > .registerContainer1,
+.sidebar-box > .sidebar-grid > .registerContainer2 {
+  height: 0px;
+  padding: 0px;
+  overflow: hidden;
+  transition: all 0.2s ease-in;
+}
+.sidebar-box > .sidebar-grid > .activeRegister {
+  display: flex;
+  height: 50px;
+  overflow: visible;
+  transition: all 0.2s ease-in;
+}
+.sidebar-box > .sidebar-grid > .loginContainer1,
+.sidebar-box > .sidebar-grid > .loginContainer2 {
+  height: 0px;
+  padding: 0px;
+  overflow: hidden;
+  transition: all 0.2s ease-in;
+}
+.sidebar-box > .sidebar-grid > .activeLogin {
+  display: flex;
+  height: 50px;
+  overflow: visible;
+  transition: all 0.2s ease-in;
+}
+.sidebar-box > .sidebar-grid > #course > .open,
+.sidebar-box > .sidebar-grid > #course > .close {
+  display: none;
+}
+.sidebar-box > .sidebar-grid > #course > .activeBtn,
+.sidebar-box > .sidebar-grid > #course > .activeBtn {
+  display: flex;
+  align-self: center;
+  margin-left: auto;
+}
+.sidebar-box > .sidebar-grid > #register > .open,
+.sidebar-box > .sidebar-grid > #register > .close {
+  display: none;
+}
+.sidebar-box > .sidebar-grid > #register > .activeBtn,
+.sidebar-box > .sidebar-grid > #register > .activeBtn {
+  display: flex;
+  align-self: center;
+  margin-left: auto;
+}
+.sidebar-box > .sidebar-grid > #login > .open,
+.sidebar-box > .sidebar-grid > #login > .close {
+  display: none;
+}
+.sidebar-box > .sidebar-grid > #login > .activeBtn,
+.sidebar-box > .sidebar-grid > #login > .activeBtn {
+  display: flex;
+  align-self: center;
+  margin-left: auto;
+}
 /* End Sidebar Style */
