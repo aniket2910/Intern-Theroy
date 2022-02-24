@@ -85,12 +85,8 @@
   background-color: #5a3939;
 }
 /* End Header Style */
-<<<<<<< HEAD
-/* footer */
-=======
 
 /* Footer Style */
->>>>>>> main
 .footer-container {
   width: 100%;
   background-color: #446478;
@@ -135,11 +131,7 @@
 
 .footer-navigation > .box > ul > li {
   list-style: none;
-<<<<<<< HEAD
-  font-size: 16px;
-=======
   font-size: 14px;
->>>>>>> main
 }
 
 .footer-navigation > .box > ul > li.heading {
@@ -174,20 +166,11 @@
 .footer-bottom > .top > ul > li > a {
   color: #fff;
   text-decoration: none;
-<<<<<<< HEAD
-  font-size: 16px;
-=======
   font-size: 14px;
->>>>>>> main
 }
 .footer-bottom > .bottom > p {
   margin-top: 12px;
   text-align: center;
-<<<<<<< HEAD
-  font-size: 15px;
-  color: #fff;
-}
-=======
   font-size: 13px;
   color: #fff;
 }
@@ -345,4 +328,3 @@
   margin-left: auto;
 }
 /* End Sidebar Style */
->>>>>>> main
