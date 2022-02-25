@@ -1,11 +1,14 @@
 #imgDiv{
     width:20%;
     margin-right: 0px;
+    margin-top: 10px;
 }
 #outer{
     display: flex;
     justify-content: center;
     background-color: whitesmoke;
+    margin-top: 70px;
+    margin-bottom: 10px;
 }
 #imgDiv>img{
     width: 100%;
@@ -14,6 +17,8 @@
     width:68%;
     background-color: white;
     margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 6px;
 }
 #container>div{
     width: 90%;
