@@ -84,3 +84,4 @@ function showPreference() {
     showPref = false;
   }
 }
+

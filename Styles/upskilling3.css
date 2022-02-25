@@ -7,7 +7,7 @@ img {
   width: 100%;
   height: 100%;
   background: cover;
-  opacity: 0.6;
+  opacity: 0.9;
 }
 #section {
   /* border:1px solid red; */
@@ -26,7 +26,7 @@ img {
 }
 #section > div:last-child {
   /* border:1px solid black; */
-  width: 25%;
+  width: 30%;
   height: 1190px;
 }
 #part1 > div:first-child {
@@ -53,7 +53,7 @@ img {
 #part1 > div:last-child {
   /* border:1px solid green; */
   width: 100%;
-  height: auto;
+  height: 1520px;
   margin-bottom: 10px;
 
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -66,6 +66,7 @@ img {
   margin-top: -130px;
   /* background-color: white; */
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ 
 }
 #part2 > div:nth-child(2) {
   /* border:1px solid green; */
@@ -76,11 +77,12 @@ img {
 }
 #part2 > div:nth-child(3) {
   display: flex;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   width: 100%;
   height: 120px;
   margin-bottom: 30px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  /* background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%); */
 }
 #part2 > div:nth-child(4) {
   /* border:1px solid green; */
@@ -339,7 +341,7 @@ img {
   height: 42px;
   width: 90%;
   margin: auto;
-  margin-bottom: 70px;
+  margin-bottom: 20px;
   border-radius: 3px;
 }
 #box > #box6 > p {
@@ -384,7 +386,7 @@ img {
   margin-bottom: 25px;
 }
 .line3 {
-  width: 98%;
+  width: 95%;
   margin: auto;
   border-top: 1px dashed #31333596;
   margin-top: 20px;
@@ -474,7 +476,7 @@ img {
 #part2 > #last3 > div:first-child {
   height: 120px;
   width: 70%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   background-color: rgba(255, 192, 203, 0.178);
 }
 #part2 > #last3 > div:first-child:hover {
@@ -483,7 +485,7 @@ img {
 #part2 > #last3 > div:last-child {
   height: 120px;
   width: 30%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 #part2 > #last3 > div:first-child > h6 {
   color: #3c4858e0;
