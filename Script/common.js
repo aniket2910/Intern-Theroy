@@ -58,3 +58,10 @@ function openLoginBox() {
   container1.classList.toggle("activeLogin");
   container2.classList.toggle("activeLogin");
 }
+
+// Logo Click handler
+document
+  .querySelector(".main-icon+.logo")
+  .addEventListener("click", function () {
+    window.location.href = "index.html";
+  });
