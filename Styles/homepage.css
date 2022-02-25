@@ -135,6 +135,9 @@
   padding-bottom: 12px;
   border-bottom: 1px solid #e0e3e5;
 }
+.companyBox > .companyBox-left > h3 > span {
+  color: #000;
+}
 
 .companyBox > .companyBox-left > p {
   color: #3a3d3f;
@@ -268,3 +271,67 @@
 }
 
 /* End Stat Container */
+
+/* Slider container */
+.slider-container {
+  width: 100%;
+  background-color: #eeeeee;
+  padding-bottom: 25px;
+  padding-top: 20px;
+}
+
+.slider-box {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.slider-box > .previous > .icon,
+.slider-box > .next > .icon {
+  cursor: pointer;
+  font-size: 54px;
+  color: #fff;
+}
+
+.slider-box > .items > div {
+  background-color: #fff;
+  margin: 30px;
+  border-radius: 0px 48px 0px 48px;
+  overflow: hidden;
+  padding: 23px 30px;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider-box > .items > div.activeBox {
+  display: flex;
+}
+.slider-box > .items > div > .left {
+  width: 70%;
+  border-right: 1px solid #00000033;
+  text-align: center;
+  margin-right: 30px;
+}
+.slider-box > .items > div > .left > .img-box {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 70px;
+  height: 70px;
+  margin: auto;
+}
+.slider-box > .items > div > .left > .img-box > img {
+  width: 100%;
+}
+.slider-box > .items > div > .left > .name {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 9px 0;
+}
+.slider-box > .items > div > .right > p {
+  color: #00000080;
+  line-height: 25px;
+  font-size: 15px;
+}
+/* End Slider Container */
