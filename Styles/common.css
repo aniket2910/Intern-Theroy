@@ -258,6 +258,10 @@
   justify-content: center;
   align-items: center;
 }
+.sidebar-box > .sidebar-grid > .box > a {
+  color: #446478;
+  text-decoration: none;
+}
 .sidebar-box > .sidebar-grid > .courseContainer1,
 .sidebar-box > .sidebar-grid > .courseContainer2 {
   height: 0px;
