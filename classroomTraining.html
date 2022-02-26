@@ -4,23 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ClassRoom Training</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="Styles/common.css">
+    <link rel="stylesheet" href="Styles/homepage.css">
     <style>
         *{
-            background-color: rgb(252, 245, 245);
+            /* background-color: rgb(252, 245, 245); */
             box-sizing: border-box;
         }
         .imgClass{
-            width: 100%; 
-            height: 200px; 
-            margin-top: 64px;
+            width: 100%;
+            margin-top: 60px;
         }
         #courseDetail{
-            margin-top: 5%;
-            margin-bottom: 50%;
-            margin-left:10%;
-            margin-right:10%;
+            padding: 2% 10%;
+            margin: 8px !important;
+        }
+        .course{
+            color: rgba(0, 0, 0, 0.54);
+            -webkit-font-smoothing: antialiased;
+            padding-block-end: 25px;
+        }
+        .course > :nth-child(2){
+            font-size: 14px;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-weight: 400;
+            line-height: 1.75;
+            letter-spacing: 0.00938em;
+        }
+        .course > :nth-child(1){
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 500;
+            font: bolder;
+            color: rgba(0, 0, 0, 0.76);
         }
         #container > p{
             font-weight: lighter;
@@ -28,18 +50,46 @@
         #container{
             display:grid;
             grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: 200px;
+            grid-template-rows: auto;
             gap: 15px;
         }
         .maindiv{
             box-shadow: rgba(0, 0, 0, 0.16) 1px 2px 4px;
-            height:400px;
-            width:250px;
+            background-color: #fff;
+            height: 370px;
+            border-radius: 5px;
         }
         .coursetitlediv{
-            border-bottom: 1px dashed;
-            box-sizing: border-box;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            margin-bottom: 10px;
+            height: 100px;
+            border-bottom: 0.5px dashed rgb(170, 170, 170);
 
+        }
+        .coursetitlediv > :nth-child(1){
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        margin-bottom: 0.35em;
+        padding-bottom: 5px;
+        letter-spacing: 0em;
+        margin: 0;
+        display: block;
+        box-sizing: inherit;
+        overflow-wrap: break-word;
+        color: rgba(0, 0, 0, 0.87);
+        text-transform: capitalize;
+        line-height: 1.2rem !important;
+        font-size: 0.9rem !important;
+        font-weight: 50 !important;
+        -webkit-font-smoothing: antialiased;
+        }
+        .coursetitlediv > :nth-child(2){
+            font-weight: lighter;
+            color: rgba(0, 0, 0, 0.54);
+            font-size: 0.875rem;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-weight: 400;
+            line-height: 1.5;
+            letter-spacing: 0.01071em;
         }
         .imgclass{
             height: 140px;
@@ -49,12 +99,30 @@
             display:flex;
             align-items: center;
             justify-content: end;
-            gap:20px;
+            gap: 2px;
         }
-        
+        .onlyprice > :nth-child(1){
+            font-size: small;
+            color: rgba(0, 0, 0, 0.54);
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        }
+        .onlyprice > :nth-child(2){
+            font-size: large;
+            color: rgba(0, 0, 0, 0.87);
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    }
         .emidiv>p{
-            width: max-content;
-            color:orange;
+            display: flex;
+            gap:8px;
+            justify-content: flex-end;
+            width: 100%;
+            color: rgb(255, 179, 38);
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 0.875rem;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            line-height: 1.5;
+            letter-spacing: 0.01071em;
         }
         .marginclass{
             margin:5%
@@ -78,6 +146,21 @@
         }
         .cartbtn{
             padding: 5px;
+        }
+        @media all and (min-width:50px) and (max-width:380px){
+            #container {height: auto;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: 370;
+            }
+        }
+
+        @media all and (min-width:381px) and (max-width:780px){
+            #container {height: auto;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: auto;
+            }
         }
         
     </style>
@@ -108,13 +191,108 @@
             <img src="https://lh3.googleusercontent.com/wlG7b-Aaqhe5Lha73h8i3bZ40i-bbpmlIub8DpsoF5aAC216D7m-FLRXLXoLFxXjUmRzArIPvctlZBpQB9_tenyGlcdBVh3O_zKVibGn" width= "100%">
         </div>
         <div id="courseDetail">
-            <div>
+            <div class="course">
                 <h3>Certified Offline Courses</h3>
                 <p>Intern Theory launches certified classroom training for select courses in Mumbai. If you are from another city and wish to join our courses, please whatsapp us on 9892041244</p>
             </div>
             <div id="container"></div>
         </div>
         
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-container">
+        <div class="footer-box">
+            <div class="footer-navigation">
+                <div class="social-handle">
+                    <div class="social-icon">
+                        <i class="fab fa-facebook-square"></i>
+                    </div>
+                    <div class="social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <div class="social-icon">
+                        <i class="fab fa-twitter-square"></i>
+                    </div>
+                    <div class="social-icon">
+                        <i class="fab fa-instagram-square"></i>
+                    </div>
+                </div>
+                <div class="box places">
+                    <ul>
+                        <li class="heading">BY PLACE</li>
+                        <li>
+                            <a href="#">Internship in Mumbai</a>
+                        </li>
+                        <li>
+                            <a href="#">Internship in Delhi</a>
+                        </li>
+                        <li>
+                            <a href="#">Internship in Bangalore</a>
+                        </li>
+                        <li>
+                            <a href="#">Internship in Pune</a>
+                        </li>
+                        <li>
+                            <a href="#">Internship in Hyderabad</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box profiles">
+                    <ul>
+                        <li class="heading">BY PROFILE</li>
+                        <li>
+                            <a href="#">Marketing Internships</a>
+                        </li>
+                        <li>
+                            <a href="#">Business Development Internships</a>
+                        </li>
+                        <li>
+                            <a href="#">Content Writing Internships</a>
+                        </li>
+                        <li>
+                            <a href="#">Graphic Designing Internships</a>
+                        </li>
+                        <li>
+                            <a href="#">HR Internships</a>
+                        </li>
+                        <li>
+                            <a href="#">Engineering Internships</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box types">
+                    <ul>
+                        <li class="heading">BY TYPE</li>
+                        <li>
+                            <a href="#">Full Time Internships</a>
+                        </li>
+                        <li>
+                            <a href="#">Part Time Internships</a>
+                        </li>
+                        <li>
+                            <a href="#">Work From Home Internships</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="top">
+                    <ul>
+                        <li><a href="#">REFUND & CANCELLATION POLICY</a></li>
+                        <li><a href="#">COURSES</a></li>
+                        <li><a href="#">TERMS AND CONDITIONS</a></li>
+                        <li><a href="#">PRIVACY POLICY</a></li>
+                        <li><a href="#">CONTACT US</a></li>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">SITEMAP</a></li>
+                    </ul>
+                </div>
+                <div class="bottom">
+                    <p>© 2015 - 2022 INTERNTHEORY. ALL RIGHTS RESERVED.</p>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
@@ -130,8 +308,6 @@
             price:"₹ 19999",
             offPrice:"₹ 9999",
             emi:"EMI Starting at ₹ 572/month",
-            // knowMore:"KNOW MORE",
-            // cart:"ADD TO CART",
         },
         {
             img:"https://assets.interntheory.com/courses/banner/1573120159.png",
