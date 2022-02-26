@@ -461,7 +461,11 @@
         gridDiv.append(courseDiv);
         gridDiv.setAttribute("class","gridClass");
         document.querySelector("#courseContainer").append(gridDiv);
+
+        cart.addEventListener("click", function(el){
+                        cartitems(elem);
     });
+
 
 
     // ADD TO CART FUNCTION
@@ -470,8 +474,12 @@
 
     var cartArr=JSON.parse(localStorage.getItem("Cartitem")) || [];
 
-    cart.addEventListener("click", function(){
-                        addToCart(el);
-    });
+    function cartitems(el){
+        cartArr.push(el);
+        localStorage.setItem("Cartitem",JSON.stringify(cartArr));
+
+    console.log(cartArr);
+  }
+});
 
 </script>
