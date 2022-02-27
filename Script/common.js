@@ -18,7 +18,6 @@ courseBtn.addEventListener("click", openBox);
 
 function openBox() {
   var openBtn = document.querySelector("#course>.open");
-  console.log(openBtn);
   var closeBtn = document.querySelector("#course>.close");
   var container1 = document.querySelector(".courseContainer1");
   var container2 = document.querySelector(".courseContainer2");
@@ -58,3 +57,10 @@ function openLoginBox() {
   container1.classList.toggle("activeLogin");
   container2.classList.toggle("activeLogin");
 }
+
+// Logo Click handler
+document
+  .querySelector(".main-icon+.logo")
+  .addEventListener("click", function () {
+    window.location.href = "index.html";
+  });

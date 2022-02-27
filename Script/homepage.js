@@ -36,9 +36,9 @@ function showItem() {
   }
 }
 showItem();
-setInterval(() => {
-  next();
-}, 2000);
+// setInterval(() => {
+//   next();
+// }, 2000);
 
 // Search-bar js
 var data = JSON.parse(localStorage.getItem("data")) || [];
@@ -83,4 +83,42 @@ function showPreference() {
     });
     showPref = false;
   }
+}
+
+// Search-bar JS
+// Select Form
+document.querySelector("#formData").addEventListener("submit", collectData);
+
+function collectData() {
+  event.preventDefault();
+  console.log("first");
+  var data = JSON.parse(localStorage.getItem("data")).internships;
+  var city = document.querySelector("#cities").value;
+  var type = document.querySelector("#type").value;
+  var preference = document.querySelector("#preference").value;
+  var search = document.querySelector("#search").value;
+  var filterData = JSON.parse(localStorage.getItem("searchData")) || [];
+  if (search != "") {
+    filterData = data.filter(function (item) {
+      return item.title.includes(search);
+    });
+    localStorage.setItem("searchData", JSON.stringify(filterData));
+    window.location.href = "intership.html";
+    return;
+  }
+  if (city == "" && search == "" && preference == "" && type == "") {
+    filterData = data;
+  } else {
+    filterData = data.filter(function (item) {
+      return city != ""
+        ? item.location.includes(city)
+        : true && type != ""
+        ? item.internship_type.includes(type)
+        : true && preference != ""
+        ? item.days_left.includes(preference)
+        : true;
+    });
+  }
+  localStorage.setItem("searchData", JSON.stringify(filterData));
+  window.location.href = "internship.html";
 }

@@ -196,11 +196,15 @@
 }
 .sidebar-box {
   width: 100%;
+  overflow-y: scroll;
 }
 .sidebar-box > .sidebar-top {
   display: flex;
   align-items: center;
   padding: 14px 18px;
+}
+.sidebar-box > .sidebar-top > .icon > i {
+  color: #446478;
 }
 .sidebar-box > .sidebar-top > .icon {
   margin-right: 20px;
@@ -236,7 +240,7 @@
   display: flex;
   align-items: center;
   padding: 3px 18px;
-  color: #446478;
+  color: #446478 !important;
   font-weight: bold;
   font-size: 15px;
 }
@@ -249,6 +253,9 @@
 .sidebar-box > .sidebar-grid > .box:hover {
   background-color: #9595b947;
 }
+.sidebar-box > .sidebar-grid > .box > .icon > i {
+  color: #446478;
+}
 .sidebar-box > .sidebar-grid > .box > .icon {
   margin-right: 20px;
   font-size: 20px;
@@ -257,6 +264,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.sidebar-box > .sidebar-grid > .box > a {
+  color: #446478;
+  text-decoration: none;
 }
 .sidebar-box > .sidebar-grid > .courseContainer1,
 .sidebar-box > .sidebar-grid > .courseContainer2 {
@@ -317,6 +328,17 @@
   align-self: center;
   margin-left: auto;
 }
+.sidebar-box > .sidebar-grid > #login {
+  border: none;
+  margin: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 3px 18px;
+  color: #446478 !important;
+  font-weight: bold;
+  font-size: 15px;
+}
 .sidebar-box > .sidebar-grid > #login > .open,
 .sidebar-box > .sidebar-grid > #login > .close {
   display: none;
@@ -328,3 +350,53 @@
   margin-left: auto;
 }
 /* End Sidebar Style */
+@media only screen and (min-width: 421px) and (max-width: 1000px) {
+  /* Header Container */
+  .header-data {
+    margin: 7px 0;
+  }
+  .header-left > .logo {
+    width: 70px;
+    height: 35px;
+    cursor: pointer;
+  }
+  .header-left > .icon,
+  .header-right > .icon {
+    font-size: 15px;
+    margin-right: 3px;
+  }
+  .button-container > a {
+    padding: 10px 16px;
+    font-size: 9px;
+  }
+  /* Sidebar Container */
+  .active {
+    width: 55%;
+  }
+  /* Footer Container */
+  .footer-box > .footer-navigation {
+    display: none;
+  }
+  .footer-bottom > .top {
+    display: none;
+  }
+}
+
+/* small screens */
+@media only screen and (min-width: 0px) and (max-width: 420px) {
+  /* Header Container */
+  .header-right > .button-container {
+    display: none;
+  }
+  /* Sidebar Container */
+  .active {
+    width: 100%;
+  }
+  /* Footer Container */
+  .footer-box > .footer-navigation {
+    display: none;
+  }
+  .footer-bottom > .top {
+    display: none;
+  }
+}
