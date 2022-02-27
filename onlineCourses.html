@@ -456,8 +456,8 @@
             img: "https://assets.interntheory.com/creative/courses/thumbnails/it.jpg",
             name: "IT Starter Pack (4 Courses)",
             note: "Learn the most demanded skills in the IT industry today. Sig ...",
-            price: "₹ 32999",
-            offPrice: "₹ 15999",
+            price: 32999,
+            offPrice: 15999,
             emi: "EMI Starting at 915/month",
         },
 
@@ -465,8 +465,8 @@
             img: "https://assets.interntheory.com/creative/courses/thumbnails/finthumbnail.jpg",
             name: "Finance Starter Pack (3 Courses)",
             note: "Learn the most demanded skills in the Finance industry today ...",
-            price: "₹ 23999",
-            offPrice: "₹ 11999",
+            price: 23999,
+            offPrice: 11999,
             emi: "EMI Starting at 687/month",
         },
 
@@ -474,8 +474,8 @@
             img: "https://assets.interntheory.com/creative/courses/thumbnails/digital-marketing-course.png",
             name: "Digital Marketing Course",
             note: "Learn the art of digital marketing. Sign up for this online ...",
-            price: "₹ 11999",
-            offPrice: "₹ 5999",
+            price: 11999,
+            offPrice: 5999,
             emi: "EMI Starting at 343/month",
         },
 
@@ -483,8 +483,8 @@
             img: "https://assets.interntheory.com/creative/courses/thumbnails/stock-market-course.png",
             name: "Stock Market Course",
             note: "Learn how to trade and invest in stock markets. Enrol for th ...",
-            price: "₹ 11999",
-            offPrice: "₹ 5999",
+            price: 11999,
+            offPrice: 5999,
             emi: "EMI Starting at 343/month",
         },
 
@@ -492,8 +492,8 @@
             img: "https://assets.interntheory.com/creative/courses/thumbnails/data-analytics-r-programming-course.png",
             name: "Data Analytics With R Programming Course",
             note: "Learn data science online. Join this online data analytics c ...",
-            price: "₹ 11999",
-            offPrice: "₹ 5999",
+            price: 11999,
+            offPrice: 5999,
             emi: "EMI Starting at 343/month",
         },
 
@@ -501,8 +501,8 @@
             img: "https://assets.interntheory.com/creative/courses/thumbnails/web-development-course.png",
             name: "Web Development Course",
             note: "Learn the art of web design and web development. Join this o ...",
-            price: "₹ 7999",
-            offPrice: "₹ 3999",
+            price: 7999,
+            offPrice: 399,
             emi: "EMI Starting at 229/month",
         },
 
@@ -510,16 +510,16 @@
             img: "https://assets.interntheory.com/creative/courses/thumbnails/tally-gst-course.png",
             name: "Tally + GST Course",
             note: "Sign up for this online tally and gst course and learn how t ...",
-            price: "₹ 7999",
-            offPrice: "₹ 3999",
+            price: 7999,
+            offPrice: 3999,
             emi: "EMI Starting at 229/month",
         },
         {
             img: "https://assets.interntheory.com/creative/courses/thumbnails/android-app-development-kotlin-course.png",
             name: "Android App Development Using Kotlin Course",
             note: "Learn the art of android app design and web development. Joi ...",
-            price: "₹ 7999",
-            offPrice: "₹ 3999",
+            price: 7999,
+            offPrice: 3999,
             emi: "EMI Starting at 229/month",
         },
 
@@ -527,8 +527,8 @@
             img: "https://assets.interntheory.com/creative/courses/thumbnails/advanced-excel-course.png",
             name: "Advanced Excel Course",
             note: "Master MS Excel. Take the online ms excel course and learn t ...",
-            price: "₹ 5999",
-            offPrice: "₹ 2999",
+            price: 5999,
+            offPrice: 2999,
             emi: "EMI Starting at 172/month",
         },
 
@@ -536,8 +536,8 @@
             img: "https://assets.interntheory.com/creative/courses/thumbnails/r-programming-course.png",
             name: "R Programming Course",
             note: "Learn r programming online. Sign up for this online r progra ...",
-            price: "₹ 5999",
-            offPrice: "₹ 2999",
+            price: 5999,
+            offPrice: 2999,
             emi: "EMI Starting at 172/month",
         },
     ]
@@ -603,22 +603,13 @@
         cart.addEventListener("click", function (el) {
             cartitems(elem);
         });
-
-
-
-        // ADD TO CART FUNCTION
-
-        var courseNames = JSON.parse(localStorage.getItem("courseNames"));
-
-        var cartArr = JSON.parse(localStorage.getItem("Cartitem")) || [];
-
-        function cartitems(el) {
-            cartArr.push(el);
-            localStorage.setItem("Cartitem", JSON.stringify(cartArr));
-
-            console.log(cartArr);
-        }
     });
+    var cartArr = JSON.parse(localStorage.getItem("Cartitem")) || [];
+
+    function cartitems(el) {
+        cartArr.push(el);
+        localStorage.setItem("Cartitem", JSON.stringify(cartArr));
+    }
 
 </script>
 <script src="Script/common.js"></script>

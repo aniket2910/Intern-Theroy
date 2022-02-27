@@ -64,3 +64,8 @@ document
   .addEventListener("click", function () {
     window.location.href = "index.html";
   });
+document
+  .querySelector(".header-right>.icon")
+  .addEventListener("click", function () {
+    window.location.href = "cart.html";
+  });
