@@ -36,9 +36,9 @@ function showItem() {
   }
 }
 showItem();
-setInterval(() => {
-  next();
-}, 2000);
+// setInterval(() => {
+//   next();
+// }, 2000);
 
 // Search-bar js
 var data = JSON.parse(localStorage.getItem("data")) || [];
@@ -120,5 +120,5 @@ function collectData() {
     });
   }
   localStorage.setItem("searchData", JSON.stringify(filterData));
-  window.location.href = "intership.html";
+  window.location.href = "internship.html";
 }
