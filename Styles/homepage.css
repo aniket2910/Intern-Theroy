@@ -166,10 +166,10 @@
   width: 80%;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(4, 200px);
   grid-template-rows: repeat(3, auto);
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
 }
 .experienceBox > .experience-head {
   grid-area: 1/1/2/5;
@@ -192,6 +192,7 @@
 .grid-exBox > img {
   width: 100%;
   height: 100%;
+  object-fit: contain;
 }
 /* End workExperience */
 
@@ -228,9 +229,10 @@
   border-radius: 4px;
   cursor: pointer;
 }
-.upSkillBox > .skillBox > img {
+.upSkillBox > .skillBox > a > img {
   width: 100%;
   height: 100%;
+  object-fit: contain;
 }
 /* End Up skill container */
 

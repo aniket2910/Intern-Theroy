@@ -222,6 +222,8 @@
 .sidebar-box > .sidebar-top > .logo {
   width: 84px;
   height: 43px;
+  display: flex;
+  align-items: center;
 }
 
 .sidebar-box > .sidebar-top > .icon:hover {
